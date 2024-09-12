@@ -1,3 +1,4 @@
+import { Button } from "../src/stories/Button";
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
@@ -5,6 +6,20 @@ const preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    playground: {
+      storyId: "playground",
+      components: { Button },
+      autocompletions: false,
+      editorTheme: "light",
+      introCode: {
+        jsx: `<Button
+                label="Large Button"
+                onClick={() => {}}
+                size="large"
+              />`,
+        css: "",
       },
     },
   },
