@@ -1,4 +1,4 @@
-import { Button } from "../src/stories/Button";
+import { Button } from "../src/components/button/Button";
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
